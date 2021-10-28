@@ -1,0 +1,127 @@
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  outline: none;
+
+  padding: 8px 16px;
+  margin-right: 1.5em;
+  margin-bottom: 0.8em;
+  min-width: 81px;
+
+  background-color: #e0e0e0;
+  box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
+  border: 1px solid transparent;
+  border-radius: 6px;
+
+  color: #3f3f3f;
+  font-size: 14px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+
+  cursor: pointer;
+  user-select: none;
+
+  &:hover,
+  &:focus {
+    background-color: #aeaeae;
+  }
+
+  &:disabled {
+    color: #9e9e9e;
+    background-color: #e0e0e0;
+    cursor: default;
+  }
+
+  &.btn--disable-shadow {
+    box-shadow: none;
+  }
+
+  // Button Type
+
+  &.btn--outline {
+    background-color: #fff;
+    color: #3d5afe;
+    border: 1px solid #3d5afe;
+    box-shadow: none;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(41, 98, 255, 0.1);
+    }
+  }
+
+  &.btn--text {
+    background-color: #fff;
+    box-shadow: none;
+    color: #3d5afe;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(41, 98, 255, 0.1);
+    }
+
+    &:disabled {
+      color: #9e9e9e;
+    }
+  }
+
+  // Button Color
+
+  &.btn--primary {
+    background-color: #3d5afe;
+    color: #fff;
+
+    &:hover {
+      background-color: #0039cb;
+    }
+  }
+
+  &.btn--secondary {
+    background-color: #455a64;
+    color: #fff;
+
+    &:hover {
+      background-color: #1c313a;
+    }
+  }
+
+  &.btn--danger {
+    background-color: #d32f2f;
+    color: #fff;
+
+    &:hover {
+      background-color: #9a0007;
+    }
+  }
+
+  // Button Size
+
+  &.btn--sm {
+    padding: 6px 12px;
+  }
+
+  &.btn--md {
+    padding: 8px 16px;
+  }
+
+  &.btn--lg {
+    padding: 11px 22px;
+  }
+
+  // Button Icon
+
+  .material-icons {
+    font-size: 18px;
+  }
+
+  &.btn--start-icon .material-icons {
+    margin-right: 8px;
+  }
+
+  &.btn--end-icon .material-icons {
+    margin-left: 8px;
+  }
+}
